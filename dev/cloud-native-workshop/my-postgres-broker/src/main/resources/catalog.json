@@ -1,0 +1,38 @@
+{
+  "services":[
+    {
+      "id":"aUniquePostgresId",
+      "name":"postgres",
+      "description":"Hi I'm Mr.Postgres! I share VMs",
+      "bindable": true,
+      "tags":[
+        "hello"
+      ],
+      "metadata":{
+        "displayName":"SharedVMs",
+        "imageUrl":"https://github.com/cf-platform-eng/simple-service-broker/blob/example/resources/pivotal.png",
+        "longDescription":"Sharing is caring",
+        "providerDisplayName":"Pivotal",
+        "documentationUrl":"https://docs.cloudfoundry.org/services/api.html"
+      },
+      "plans":[
+        {
+          "id":"anotherUniquePostgresId",
+          "name":"SharedVMs",
+          "description":"I share because I care",
+          "metadata": {
+            "cost": 0,
+            "bullets": [{
+              "content": "straight-forward"
+            }, {
+              "content": "to the point"
+            }, {
+              "content": "40 concurrent connections"
+            }]
+          },
+          "free": true
+        }
+      ]
+    }
+  ]
+}

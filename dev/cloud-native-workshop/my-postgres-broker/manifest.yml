@@ -1,0 +1,16 @@
+---
+applications:
+- name: my-postgres-broker
+  memory: 1G
+  instances: 1
+  path: target/my-postgres-broker-0.0.1.jar
+  services: [ redis-for-postgres ]
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    POSTGRES_HOST: 54.200.42.160
+    POSTGRES_PORT: 5432
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: some_password
+    POSTGRES_DB: template1
+    SECURITY_USER_NAME: admin
+    SECURITY_USER_PASSWORD: admin
