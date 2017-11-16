@@ -5,7 +5,7 @@ Documents and presentations for SMIT Training sessions
 
 ### Quick and Dirty Login
 
-`cf login -a api.sys.pcf-1-12.infra-red.xyz -u admin -p "pAsLz4ZRxwtPYBOv4odyAZKa-QeLSND-"`
+`cf login -a api.sys.pcf-1-12.infra-red.xyz -u ***** -p ***************************`
 
 ## chmod 777
 
