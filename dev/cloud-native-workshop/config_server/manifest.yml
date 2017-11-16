@@ -1,0 +1,6 @@
+applications:
+- name: s-matyukevich-config
+  path: target/config_server-1.0-SNAPSHOT.jar
+  memory: 1G 
+  env:
+    spring.cloud.config.server.git.uri: https://github.com/s-matyukevich/config-repository

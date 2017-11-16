@@ -1,0 +1,12 @@
+language: java
+before_script: cd 12f_app
+script: mvn clean install
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: sergey.matykevich@altoros.com
+  api: https://api.run.pivotal.io
+  organization: matyukevich
+  space: development
+  password:
+    secure: BC52vj9YM/eCcTJtwiiVhmlaOSshjWvgo4YSuso7IHgnujaNjjo5+urUNWTqVKo0ZhYxNd9T6hPb3SStqh9it8UKd2K9Yt6ckCOE5VVt87s0MjHR95MjsowLVdpyig1ogv1xqBxAu7YgbyCkiNBZuON9q1oSuzb57L75bKiMkfLCPhj6csMQE9sI9VlfO+vDV+7kCROqTSOP2eMMz+JnWhdHJYGy6vC9yqroEmOrpntoJB31XbpqPgoOGpsBKM/qA/3LyhWfJ0v7YqkR+GC5+bKjYK0HJ9lj01GA+vvTbJTHkfxQ7ApnKHQhvC3k7xE3jETSFRAAMLQouQrlx8IR0rhuqxFerwr6vTYcI2ApG3n8N5Xr0jLVzXFG1ePq2jECJca6HkX4g72KYIRJ3aI9+PYba8lQB0BZIybeQtvHu/n8bFBiJ5k3ekqZjXXCrHcFHqdOdU0bPRDyfIas9Di3UI/jHoFD/Zg6r4tvgD9TSD+2b5mGZvlzLUG/5ePiSoNr+6Gvo682Q1IeuOvhY67WcH3YH2bQmtNpNID246HrywrlnO1fcV6w9iy40LKy8AvxSQqdsTeG17iM1WJu+2ne1vYfgLmIpEbYGLaojtuZb357wIPDngYJ5aWs9WCFaItoo89FUylC06q2FkDsag2AH+aSZL29FFYiITZ3HtS7Uew=

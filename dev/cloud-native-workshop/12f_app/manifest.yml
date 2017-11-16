@@ -1,0 +1,10 @@
+applications:
+- name: s-matyukevich
+  path: target/12f_app-1.0-SNAPSHOT.jar
+  memory: 1G
+  services:
+  - my-db
+  - my-redis
+env:
+  eureka.client.serviceUrl.defaultZone: https://s-matyukevich-eureca.cfapps.io/eureka
+

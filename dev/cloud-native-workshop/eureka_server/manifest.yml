@@ -1,0 +1,9 @@
+applications:
+- name: s-matyukevich-eureca
+  path: target/eureka_server-1.0-SNAPSHOT.jar
+  memory: 1G
+  env:
+    eureka.client.register-with-eureka: false
+    eureka.client.fetch-registry: false
+    logging.level.com.netflix.eureka: OFF
+    logging.level.com.netflix.discovery: OFF
