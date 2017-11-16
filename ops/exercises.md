@@ -30,7 +30,7 @@
 
 ## Part 3
 
-* Download jq (https://stedolan.github.io/jq/)
+* Download jq (https://stedolan.github.io/jq/). Help here: https://jqplay.org/#
 * Create a BASH script that displays all the applications in this CF deployment by name.
   * Hint: use cf curl /v2/apps
 * Modify the script to get the space_guid and for each application, retrieve the service instances that are in the space containing the application.
